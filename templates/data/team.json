@@ -5,9 +5,9 @@
     "photo": "team/ben.jpg"
   },
   {
-    "name": "Fiona Chan",
-    "twitter": "mobywhale",
-    "photo": "team/fiona.jpg"
+    "name": "Karolina Szczur",
+    "twitter": "fox",
+    "photo": "team/kazza.jpg"
   },
   {
     "name": "Glen Maddern",
@@ -20,9 +20,14 @@
     "photo": "team/michael.jpg"
   },
   {
-    "name": "Tim Lucas",
-    "twitter": "toolmantim",
-    "photo": "team/tim.jpg"
+    "name": "Cade",
+    "twitter": "helveticade",
+    "photo": "team/cade.jpg"
+  },
+  {
+    "name": "Jordan",
+    "twitter": "jordanlewiz",
+    "photo": "team/jordan.jpg"
   }
 
 ]
