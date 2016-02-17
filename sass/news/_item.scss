@@ -63,18 +63,6 @@
     }
   }
 
-  footer {
-    background-color: rgba(white, .15);
-    margin-top: 100px;
-    border-radius: 10px;
-    padding: 25px;
-    text-align: center;
-    p { margin-left: auto; margin-right: auto; }
-    p.what { font-size: 24px; max-width: 30em; }
-    p.sponsors { font-size: 18px; max-width: 40em; }
-    p + p { margin-top: 10px; }
-  }
-
   @media only screen and (max-width: 500px) {
     display: flex;
     flex-flow: column nowrap;
@@ -94,10 +82,6 @@
     }
     .title {
       width: 100%;
-    }
-    footer {
-      order: 3;
-      margin-top: 50px;
     }
   }
 
