@@ -22,6 +22,6 @@ grunt Release
 ```
 
 ## License
-The files in `2016/dist/fonts` are copyright and are not allowed to be used without license from MyFonts. Everything else licensed under [MIT](LICENSE.md).
+The files in `2016/dist/fonts` are copyright and are not allowed to be used without license from MyFonts. Everything else licensed under [MIT](LICENSE).
 
 Copyright &copy; 2016 Ben Schwarz, Glen Maddern, Michael Mifsud, Cade Dihm, Karolina Szczur.
