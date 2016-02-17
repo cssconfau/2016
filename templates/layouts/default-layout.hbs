@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>{{#if title}}{{title}} | {{/if}}{{siteTitle}}</title>
+    <link rel="stylesheet" href="{{assets}}/css/2014.css?v2">
+    <link rel="source" href="https://github.com/cssconfau/2014">
+    <meta property="og:title" content="{{#if title}}{{title}} | {{/if}}{{siteTitle}}">
+    <meta name="description" content="{{eventDescription}}">
+    <meta property="og:description" content="{{eventDescription}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{urlresolve rootUrl path}}">
+    <meta property="og:image" content="{{urlresolve rootUrl '/images/og-logo.png'}}">
+    <meta property="og:site_name" content="{{siteTitle}}">
+    <link href="{{urlresolve rootUrl path}}" rel="canonical">
+    <meta name="google-site-verification" content="DztqEnT0MLF6954LyljBNiUVmmw8hRybjTbJWk3pDEQ">
+    <!--
+          _______________________________________
+         /                                       \
+        /    Oh hai there! You should put in a    \
+       |    talk proposal, you l33t h4x0r you.     |
+        \                                         /
+         \–––––––––––––––––––––––––––––––––––––––/
+               \   ^__^
+                \  (oo)\_______
+                   (__)\       )\/\
+                       ||––––w |
+                       ||     ||
+
+
+      Also, don’t look too closely :) This whole thing was designed, hacked and
+      shipped by Tim in the wee hours of the morning of January 30, 2014.
+    -->
+  </head>
+  <body class="{{pageClass}}" id="overrides">
+
+    <header {{#unless hideLogo}}class="with-logo"{{/unless}}>
+      {{#unless hideLogo}}<h1 class="logo"><a href="/"><img src="{{assets}}/images/logo-without-subhead.svg" alt="CSSConf"></a></h1>{{/unless}}
+      {{#if hideLocationInHeader}}
+        <p class="when"><time datetime="2014-04-09">April 9, 2014</time></p>
+      {{else}}
+        <p class="when-where"><time datetime="2014-04-09">April 9, 2014</time> <span class="where">Melbourne, Aus</span></p>
+      {{/if}}
+      {{#if showActionButtonInHeader}}
+        <p class="tickets">
+          {{!-- <a class="button" href="{{ticketsUrl}}">Purchase tickets</a> --}}
+          {{!-- <a class="button" href="/#schedule">Schedule</a> --}}
+          <a class="button" href="/news/thank-you/">Thank You</a>
+        </p>
+      {{/if}}
+    </header>
+
+    <article>
+      {{> body }}
+    </article>
+
+    <footer>
+      <div class="inner">
+        <div class="oh-hai">&nbsp;</div>
+      </div>
+    </footer>
+
+    <script>
+      // Fix up obscured mailto links
+      (function(links) {
+        var domain = 'cssconf.com.au', placeholder = 'THISDOMAIN';
+        for (var i = 0; i < links.length; i++) {
+          if (links[i].href.indexOf(placeholder) != -1)
+            links[i].href = links[i].href.replace(placeholder, domain);
+          if (links[i].textContent.indexOf(placeholder) != -1)
+            links[i].textContent = links[i].textContent.replace(placeholder, domain);
+        }
+      })(document.getElementsByTagName("a"));
+    </script>
+
+    <script>
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '52a79c748bfdf759e1000094');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+
+    <script>
+      (function() {
+        if (!document.querySelector) return;
+        window.addEventListener('load', function() {
+          var footer = document.querySelector('body > footer');
+          footer.addEventListener('touchstart', function() {
+            var elem = footer.querySelector('.oh-hai');
+            if (elem.classList) elem.classList.toggle('active');
+          })
+        })
+      })()
+    </script>
+  </body>
+</html>

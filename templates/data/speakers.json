@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Nicole Sullivan",
+    "twitter": "stubbornella",
+    "photo": "speakers/nicole.jpg"
+  },
+  {
+    "name": "Nicolas Gallagher",
+    "twitter": "necolas",
+    "photo": "speakers/nicolas.jpg"
+
+  },
+  {
+    "name": "Ana Tudor",
+    "twitter": "thebabydino",
+    "photo": "speakers/ana.jpg"
+  },
+  {
+    "name": "Simurai",
+    "twitter": "simurai",
+    "photo": "speakers/simurai.jpg"
+  },
+  {
+    "name": "Lea Verou",
+    "twitter": "leaverou",
+    "photo": "speakers/lea.jpg"
+  },
+  {
+    "name": "Chris Eppstein",
+    "twitter": "chriseppstein",
+    "photo": "speakers/chris.jpg"
+  },
+  {
+    "name": "Christopher Giffard",
+    "twitter": "cgiffard",
+    "photo": "speakers/chrisg.jpg"
+  },
+  {
+    "name": "Connor Sears",
+    "twitter": "connors",
+    "photo": "speakers/connors.jpg"
+  },
+  {
+    "name": "Chris Wright",
+    "twitter": "cwrightdesign",
+    "photo": "speakers/chrisw.jpg"
+  }
+]

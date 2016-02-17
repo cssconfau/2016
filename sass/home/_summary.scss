@@ -1,0 +1,25 @@
+body.home #summary {
+  margin-top: 100px;
+  background: transparent url(../images/illustrations/header.svg) center bottom no-repeat;
+  background-size: 100%;
+  $background-image-ratio: 714px/1996px;
+  padding-bottom: $background-image-ratio * 100%;
+  @media only screen and (max-width: 500px) {
+    margin-top: 50px;
+    background-size: 200%;
+    background-position: 37% bottom;
+    padding-bottom: $background-image-ratio * 170%;
+    margin-bottom: -50px;
+    .logo { margin-bottom: none; }
+  }
+  .logo {
+    width: 30%;
+    margin: 0 auto -12% auto;
+    transform: translateX(-7%);
+    @media only screen and (max-width: 900px) { width: 45%; }
+    @media only screen and (max-width: 700px) { width: 60%; }
+    @media only screen and (max-width: 500px) { width: 75%; }
+    @media only screen and (max-width: 350px) { width: 90%; transform: none; margin-top: -10px; }
+    .inner { @include responsive-image-container(1397px, 1080px); }
+  }
+}

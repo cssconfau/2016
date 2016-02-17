@@ -1,0 +1,26 @@
+.person-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px -20px;
+  li {
+    width: 150px;
+    text-align: center;
+    margin: 25px 20px;
+    margin-bottom: 25px;
+    list-style: none;
+    &.-textonly {
+      font-size: 14px;
+      line-height: 1.4;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    text-align: center;
+    flex-flow: column wrap;
+    li { flex: 1; }
+  }
+}

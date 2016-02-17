@@ -1,0 +1,46 @@
+// Reset
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, p, ul, ol, li {
+  padding: 0;
+  margin: 0;
+}
+
+@import "colors";
+@import "text";
+@import "forms";
+@import "responsive_images";
+
+@import "layout";
+
+@import "components/button";
+@import "components/person";
+@import "components/person_list";
+@import "components/news_list";
+@import "components/news_list_item";
+@import "components/news_date";
+@import "components/news_video";
+
+html {
+  font-size: 21px;
+  background-color: $page-color;
+  @extend %body-font;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: $text-color;
+}
+
+sup {
+  text-transform: lowercase;
+}
+
+@import "home/index";
+
+@import "news/index";
+@import "news/item";
+@import "news/codepen_embed";
