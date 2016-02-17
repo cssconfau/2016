@@ -47,12 +47,12 @@ body.home {
 
 }
 
-@import "home/summary";
-@import "home/conference";
-@import "home/tickets";
-@import "home/fringe_events";
-@import "home/news";
-@import "home/sponsors";
-@import "home/team";
-@import "home/contact";
-@import "home/schedule";
+@import "_summary";
+@import "_conference";
+@import "_tickets";
+@import "_fringe_events";
+@import "_news";
+@import "_sponsors";
+@import "_team";
+@import "_contact";
+@import "_schedule";
